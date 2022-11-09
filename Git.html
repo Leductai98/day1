@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm hiểu về Git</title>
+    <link
+      rel="shortcut icon"
+      href="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Tìm hiểu về Git</h1>
+    <h2>Git là gì?</h2>
+    <p>
+      Git là một hệ thống quản lý phiên bản phân tán (Distributed Version
+      Control System - DVCS), nó là một trong những hệ thống quản lý phiên bản
+      phân tán phổ biến nhất hiện nay. Git cung cấp cho mỗi lập trình viên kho
+      lưu trữ (repository) riêng chứa toàn bộ lịch sử thay đổi.
+    </p>
+    <h2>Version Control System - VCS là gì?</h2>
+    <p>
+      VCS là viết tắt của Version Control System là hệ thống kiểm soát các phiên
+      bản phân tán mã nguồn mở. Các VCS sẽ lưu trữ tất cả các file trong toàn bộ
+      dự án và ghi lại toàn bộ lịch sử thay đổi của file. Mỗi sự thay đổi được
+      lưu lại sẽ được và thành một version (phiên bản). VCS nghĩa là hệ thống
+      giúp lập trình viên có thể lưu trữ nhiều phiên bản khác nhau của một mã
+      nguồn được nhân bản (clone) từ một kho chứa mã nguồn (repository), mỗi
+      thay đổi vào mã nguồn trên local sẽ có thể ủy thác (commit) rồi đưa lên
+      server nơi đặt kho chứa chính. Và một máy tính khác nếu họ có quyền truy
+      cập cũng có thể clone lại mã nguồn từ kho chứa hoặc clone lại một tập hợp
+      các thay đổi mới nhất trên máy tính kia. Lập trình viên có thể xem lại
+      danh sách các sự thay đổi của file như xem một dòng thời gian của các
+      phiên bản. Mỗi phiên bản bao gồm: nội dung file bị thay đổi, ngày giờ sửa
+      đổi, người thay đổi là ai, lý do thay đổi hay tên phiên bản…
+    </p>
+    <h2>Git có lợi ích gì?</h2>
+    <p>
+      Các dự án thực tế thường có nhiều lập trình viên làm việc song song. Vì
+      vậy, một hệ thống kiểm soát phiên bản như Git là cần thiết để đảm bảo
+      không có xung đột code giữa các lập trình viên. Ngoài ra, các yêu cầu
+      trong các dự án như vậy thay đổi thường xuyên. Vì vậy, một hệ thống kiểm
+      soát phiên bản cho phép các nhà phát triển revert và quay lại phiên bản cũ
+      hơn của code. Cuối cùng, đôi khi một số dự án đang được chạy song song
+      liên quan đến cùng một cơ sở code. Trong trường hợp như vậy, khái niệm
+      phân nhánh trong Git là rất quan trọng.
+    </p>
+    <ul>
+      <li>Dễ sử dụng, thao tác nhanh, gọn, lẹ và rất an toàn.</li>
+      <li>
+        Sễ dàng kết hợp các phân nhánh (branch), có thể giúp quy trình làm việc
+        code theo nhóm đơn giản hơn rất nhiều.
+      </li>
+      <li>
+        Chỉ cần clone mã nguồn từ kho chứa hoặc clone một phiên bản thay đổi nào
+        đó từ kho chứa, hoặc một nhánh nào đó từ kho chứa là bạn có thể làm việc
+        ở mọi lúc mọi nơi.
+      </li>
+      <li>Deployment sản phẩm của bạn một cách không thể nào dễ dàng hơn.</li>
+    </ul>
+    <h2>Các lệnh git cơ bản</h2>
+    <ol>
+      <li>
+        <b>git config</b> <br />
+        Tác dụng : Để set user name và email của bạn trong main configuration
+        file. <br />
+        Cách xài : Để kiểm tra tên và kiểu email trong cấu hình dùng git config
+        -- global user.name và git config -- global user.email. Để set email
+        hoặc tên mới git config -- global user.name = “Hải Nguyễn” và git config
+        -- global user.email = “hainguyen@gmail.com”
+      </li>
+      <li>
+        <b>git init</b> <br />
+        Tác dụng : Khởi tạo 1 git repository 1 project mới hoặc đã có. <br />
+        Cách xài: git init trong thư mục gốc của dự án.
+      </li>
+      <li>
+        <b>git status</b> <br />
+        Tác dụng: Để check trạng thái của những file bạn đã thay đổi trong thư
+        mục làm việc. VD: Tất cả các thay đổi cuối cùng từ lần commit cuối cùng.
+        <br />
+        Cách xài: git status trong thư mục làm việc.
+      </li>
+      <li>
+        <b>git add</b> <br />
+        Tác dụng: Thêm thay đổi đến stage/index trong thư mục làm việc. <br />
+        Cách xài: git add
+      </li>
+    </ol>
+    <h2>Github là gì?</h2>
+    <p>
+      GitHub là một dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn Git cho các
+      dự án phần mềm. Github có đầy đủ những tính năng của Git, ngoài ra nó còn
+      bổ sung những tính năng về social để các developer tương tác với nhau.
+    </p>
+  </body>
+</html>
