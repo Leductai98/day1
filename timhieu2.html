@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm hiểu</title>
+  </head>
+  <body>
+    <h1>Tìm hiểu</h1>
+    <h2>BEM là gì?</h2>
+    <p>
+      BEM là viết tắt của Block-Element-Modifier, là một tiêu chuẩn quy ước đặt
+      tên cho các tên lớp CSS. BEM giúp cho việc code Frontend dễ đọc và dễ hiểu
+      hơn, dễ làm việc và dễ mở rộng cũng như bảo trì khi làm việc với CSS. Việc
+      đặt tên theo chuẩn giúp các lập trình viên frontend hiểu được đoạn code đó
+      có ý nghĩa gì, nó thực hiện nhiệm vụ gì. Từ đó những lập trình viên khác
+      khi đọc vào code của bạn họ cũng hiểu được bạn đang làm gì, từ đó dễ dàng
+      phân tích, thay đổi và quản lý hơn sau này.
+    </p>
+    <h2>Những thành phần cơ bản của BEM</h2>
+    <h3>Quy ước đặt tên</h3>
+    <p>
+      .block {} /* Block */ <br />
+      .block__element {} /* Element */ <br />
+      .block--modifier {} /* Modifier */
+    </p>
+    <h4>1. Block:</h4>
+    <p>
+      Là một thành phần của trang web hay ứng dụng đó, các thành phần của DOM
+      cũng có thể là các block. Block ở đây thường là các thành phần header,
+      body, content, footer. Ví dụ section td bên dưới tập hợp các block sau:
+    </p>
+    <ul>
+      <li>.td__container làm nhiệm vụ cân max width và padding left right</li>
+      <li>
+        .td__inner làm nhiệm vụ cân padding top bottom và điểm bám cho các
+        element absolute. VD: chỉnh một button…
+      </li>
+      <li>.td__header chứa Sub-title.</li>
+      <li>.td__content chứa Headline và Description.</li>
+      <li>.td__footer chứa button CTA.</li>
+    </ul>
+    <p>
+      Các prefix của các class đều là td giúp chúng ta có thể nhận diện section
+      khi muốn update mục tương ứng trong css.
+    </p>
+    <h4>2. Elements:</h4>
+    <p>
+      Là một thành phần của một block và sẽ không tồn tại độc lập mà không có
+      block vì được đặt bên trong nó, và chúng phụ thuộc vào parent block của
+      nó. Trong BEM, các phần tử được biểu thị bằng dấu gạch dưới kép __.
+    </p>
+    <ul>
+      <li>.td__headline là Text cỡ lớn. Style thường là H1 hoặc H2.</li>
+      <li>.td__intro, .td__description làm mô tả content.</li>
+      <li>.td__image chứa ảnh.</li>
+      <li>.td__button với style riêng cho button trong section này.</li>
+    </ul>
+    <h4>3. Modifers:</h4>
+    <p>
+      Được dùng để thao tác thay đổi cách hiển thị trên block hoặc phần tử. Ví
+      dụ mình muốn tạo thêm một block .block__elem khác nữa và muốn làm nổi bật
+      nó thì sẽ thêm một class .block__elem--hightlight để tạo sự khác biệt đó.
+    </p>
+
+    <h2>Box model là gì?</h2>
+    <p>
+      Mỗi phần tử trong 1 trang web đều là một khối chữ nhật riêng biệt. Box
+      model được hiểu là sự chiếm không gian của phần tử trong trang web, nó là
+      tổng của:
+    </p>
+    <ol>
+      <li>content: Nội dung của phần tử</li>
+      <li>border: Đường viền</li>
+      <li>padding: Khoảng đệm (khoảng cách từ border đến content)</li>
+      <li>
+        margin: Lề (khoảng cách từ border của phần tử này đến border của phần tử
+        khác)
+      </li>
+    </ol>
+    <h2>Cascade - Specificity - Inheritance là gì?</h2>
+    <h3>Cascade</h3>
+    <p>
+      Cascade nghĩa là xếp tầng. Cascade xác định thứ tự ưu tiên cho cách áp
+      dụng các kiểu xung đột.
+    </p>
+    <h3>Specificity</h3>
+    <p>
+      Nếu có hai hay nhiều quy tắc CSS (CSS rule) xung đột trỏ đến cùng một phần
+      tử, trình duyệt sẽ tuân theo một số nguyên tắc để xác định độ ưu tiên cho
+      các quy tắc, quy tắc nào có độ ưu tiên cao nhất sẽ được áp dụng.
+    </p>
+    <h3>Inheritance</h3>
+    <p>
+      Mỗi phần tử trong một tài liệu HTML là một phần của một cây và mọi phần tử
+      ngoại trừ phần tử ban đầu có một phần tử cha kèm theo nó. Bất kỳ kiểu nào
+      được áp dụng cho phần tử cha đó đều có thể được áp dụng cho các phần tử
+      kèm theo trong đó nếu các thuộc tính là các phần tử có thể được kế thừa.
+    </p>
+  </body>
+</html>
