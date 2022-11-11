@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+   max-width: 100%;
+   vertical-align: middle;
+   height: auto;
+}
+.quote{
+    margin-top: 5px;
+    border-top: 1px solid rgb(174, 174, 177);
+    border-left: 5px solid rgb(193, 193, 211);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.dp{
+    display: inline-block;
+    width: 120px;
+    background-color: rgb(196, 212, 206);
+    color: rgb(114, 14, 14);
+    border: 1px solid rgb(51, 53, 54);
+    padding: 5px;
+}
+.sumary{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 1px rgb(75, 78, 83);
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p{
+    text-indent: 10px;
+    line-height: 1.5;
+}
+li{
+    line-height: 1.5;
+}
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+}
